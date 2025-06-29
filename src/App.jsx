@@ -39,10 +39,10 @@ export default function App() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-#002333">
-      <h1 className="pb-10 pt-2 font-extrabold uppercase text-3xl text-white">
+      <h1 className="p-2 font-extrabold uppercase text-3xl text-white">
         Tic - Tac - Toe
       </h1>
-      <div className="flex items-center gap-x-10 px-5 h-screen">
+      <div className="flex items-center gap-x-10 px-5">
         <div>
           <Board
             xIsNext={xIsNext}
