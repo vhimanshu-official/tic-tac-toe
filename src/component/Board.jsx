@@ -28,7 +28,7 @@ export default function Board({ xIsNext, squares, onPlay }) {
         {status}
       </h2>
       <div
-        className="flex flex-col border-2 border-gray-500 p-2 rounded-lg"
+        className="flex flex-col border-2 border-gray-500 p-3 rounded-lg"
         style={{ "background-color": "#038C8C" }}
       >
         <div className="flex p-0">

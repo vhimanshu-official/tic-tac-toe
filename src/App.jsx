@@ -38,20 +38,39 @@ export default function App() {
   });
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-#002333">
-      <h1 className="p-2 font-extrabold uppercase text-3xl text-white">
-        Tic - Tac - Toe
-      </h1>
-      <div className="flex items-center gap-x-10 px-5">
-        <div>
+    <div>
+      {/* Desktop */}
+      <div className="hidden md:flex flex-col justify-center items-center min-h-screen bg-#002333">
+        <h1 className="italic font-serif py-2 px-5 font-extrabold uppercase text-3xl text-white mb-20 border rounded-full bg-indigo-200 bg-opacity-20">
+          Tic - Tac - Toe
+        </h1>
+        <div className="flex items-center gap-x-20 px-5">
+          <div>
+            <Board
+              xIsNext={xIsNext}
+              squares={currentSquares}
+              onPlay={handlePlay}
+            />
+          </div>
+          <div className="flex flex-col border border-slate-500 rounded-lg p-5 bg-opacity-15 bg-white">
+            <ol className="grid grid-rows-5 grid-flow-col gap-4">{moves}</ol>
+          </div>
+        </div>
+      </div>
+      {/* Mobile */}
+      <div className="md:hidden flex flex-col justify-center items-center min-h-screen bg-#002333">
+        <h1 className="italic font-serif tracking-widest py-2 mt-5 px-4 font-bold uppercase text-2xl text-white border rounded-full bg-indigo-200 bg-opacity-20">
+          Tic - Tac - Toe
+        </h1>
+        <div className="flex items-center gap-x-10 px-5">
           <Board
             xIsNext={xIsNext}
             squares={currentSquares}
             onPlay={handlePlay}
           />
         </div>
-        <div className="flex flex-col">
-          <ol>{moves}</ol>
+        <div className="flex flex-col items-center my-5 border border-slate-500 rounded-lg p-5 bg-opacity-15 bg-white">
+          <ol className="grid grid-rows-5 grid-flow-col gap-4">{moves}</ol>
         </div>
       </div>
     </div>
