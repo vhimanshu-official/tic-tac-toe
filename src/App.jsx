@@ -70,7 +70,9 @@ export default function App() {
           />
         </div>
         <div className="flex flex-col items-center my-5 border border-slate-500 rounded-lg p-5 bg-opacity-15 bg-white">
-          <ol className="grid grid-rows-5 grid-flow-col gap-4">{moves}</ol>
+          <ol className="grid grid-rows-5 grid-flow-col gap-x-4 gap-y-2">
+            {moves}
+          </ol>
         </div>
       </div>
     </div>
