@@ -40,7 +40,7 @@ export default function App() {
   return (
     <div>
       {/* Desktop */}
-      <div className="hidden md:flex flex-col justify-center items-center min-h-screen bg-#002333">
+      <div className="hidden md:flex flex-col justify-center items-center min-h-screen bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(100,255,238,.5)_100%)]">
         <h1 className="italic font-serif py-2 px-5 font-extrabold uppercase text-3xl text-white mb-20 border rounded-full bg-indigo-200 bg-opacity-20">
           Tic - Tac - Toe
         </h1>
@@ -58,7 +58,7 @@ export default function App() {
         </div>
       </div>
       {/* Mobile */}
-      <div className="md:hidden flex flex-col justify-center items-center min-h-screen bg-#002333">
+      <div className="md:hidden flex flex-col justify-center items-center min-h-screen bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(100,255,238,.5)_100%)]">
         <h1 className="italic font-serif tracking-widest py-2 mt-5 px-4 font-bold uppercase text-2xl text-white border rounded-full bg-indigo-200 bg-opacity-20">
           Tic - Tac - Toe
         </h1>
