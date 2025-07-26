@@ -28,7 +28,7 @@ export default function App() {
       <li key={move}>
         <button
           style={{ backgroundColor: "#038C7F", color: "#F2F2F2" }}
-          className="p-1 my-1 rounded border-2 border-slate-500 font-extrabold font-serif tracking-widest"
+          className="p-1 my-1 rounded-full px-2 border-2 border-slate-500 font-extrabold font-serif tracking-widest"
           onClick={() => jumpTo(move)}
         >
           {description}
@@ -41,7 +41,7 @@ export default function App() {
     <div>
       {/* Desktop */}
       <div className="hidden md:flex flex-col justify-center items-center min-h-screen bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(100,255,238,.5)_100%)]">
-        <h1 className="italic font-serif py-2 px-5 font-extrabold uppercase text-3xl text-white mb-20 border rounded-full bg-indigo-200 bg-opacity-20">
+        <h1 className="italic font-serif py-2 px-5 font-semibold uppercase text-3xl text-white mb-20 border rounded-full bg-black bg-opacity-30">
           Tic - Tac - Toe
         </h1>
         <div className="flex items-center gap-x-20 px-5">
@@ -52,14 +52,14 @@ export default function App() {
               onPlay={handlePlay}
             />
           </div>
-          <div className="flex flex-col border border-slate-500 rounded-lg p-5 bg-opacity-15 bg-white">
+          <div className="flex flex-col border border-slate-500 rounded-3xl p-5 bg-opacity-15 bg-white">
             <ol className="grid grid-rows-5 grid-flow-col gap-4">{moves}</ol>
           </div>
         </div>
       </div>
       {/* Mobile */}
       <div className="md:hidden flex flex-col justify-center items-center min-h-screen bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(100,255,238,.5)_100%)]">
-        <h1 className="italic font-serif tracking-widest py-2 mt-5 px-4 font-bold uppercase text-2xl text-white border rounded-full bg-indigo-200 bg-opacity-20">
+        <h1 className="italic font-serif tracking-widest py-2 mt-5 px-4 font-bold uppercase text-2xl text-white border rounded-full bg-black bg-opacity-30">
           Tic - Tac - Toe
         </h1>
         <div className="flex items-center gap-x-10 px-5">
@@ -69,7 +69,7 @@ export default function App() {
             onPlay={handlePlay}
           />
         </div>
-        <div className="flex flex-col items-center my-5 border border-slate-500 rounded-lg p-5 bg-opacity-15 bg-white">
+        <div className="flex flex-col items-center my-5 border border-slate-500 rounded-3xl p-5 bg-opacity-5 bg-white">
           <ol className="grid grid-rows-5 grid-flow-col gap-x-4 gap-y-2">
             {moves}
           </ol>
